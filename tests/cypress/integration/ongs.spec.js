@@ -1,5 +1,3 @@
-/* Author: https://www.youtube.com/watch?v=gTRMuWCp8mE */
-
 /// <reference types="cypress" />
 
 describe('Ongs', () => {
