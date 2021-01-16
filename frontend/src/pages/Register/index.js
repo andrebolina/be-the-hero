@@ -59,6 +59,7 @@ export default function Register() {
                         placeholder="Nome da ONG"
                         value={name}
                         onChange={e => setName(e.target.value)}
+                        data-cy="name"
                     />
 
                     <input
@@ -66,12 +67,14 @@ export default function Register() {
                         placeholder="E-mail"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
+                        data-cy="email"
                     />
 
                     <input
                         placeholder="Whatsapp"
                         value={whatsapp}
                         onChange={e => setWhatsapp(e.target.value)}
+                        data-cy="whatsapp"
                     />
 
                     <div className="input-group">
@@ -79,6 +82,7 @@ export default function Register() {
                             placeholder="Cidade"
                             value={city}
                             onChange={e => seCity(e.target.value)}
+                            data-cy="city"
                         />
 
                         <input
@@ -86,10 +90,11 @@ export default function Register() {
                             style={{ width: 80 }}
                             value={uf}
                             onChange={e => setUF(e.target.value)}
+                            data-cy="uf"
                         />
                     </div>
 
-                    <button className="button" type="submit">Cadastrar</button>
+                    <button className="button" type="submit" data-cy="submit">Cadastrar</button>
                 </form>
             </div>
         </div>
